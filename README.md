@@ -39,7 +39,7 @@ In Babel 6, every transformer is a plugin that can be installed separately. A pr
 npm install http-server --save-dev
 ```
 
-⋅⋅⋅We are using a local web server because some parts of this tutorial require the application to be loaded using the http protocol and will not work if loaded using the file protocol.
+  We are using a local web server because some parts of this tutorial require the application to be loaded using the http protocol and will not work if loaded using the file protocol.
 
 6. Open package.json in your favorite code editor. In the scripts section, remove the test script, and add two new scripts: a script named babel that compiles scripts.js to a version of ECMAScript that can run in current browsers, and a script named start that starts the local web server. The scripts section should now look like this:
 
