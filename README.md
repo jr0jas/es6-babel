@@ -43,17 +43,46 @@ We are using a local web server because some parts of this tutorial require the 
 
 5. Open package.json in your favorite code editor. In the scripts section, remove the test script, and add two new scripts: a script named babel that compiles scripts.js to a version of ECMAScript that can run in current browsers, and a script named start that starts the local web server. The scripts section should now look like this:
 
-..* ```
+```
   "scripts": {
     "babel": "babel --presets es2015 js/scripts.js -o build/scripts.bundle.js",
     "start": "http-server"
   },
 ```
 
-..* In the es6-babel directory, create a build directory to host the compiled version of the application.
+In the es6-babel directory, create a build directory to host the compiled version of the application.
 
 ## Step 3: Build and Run
 
-1. v
-1. w
+1. On the command line, make sure you are in the es6-babel directory, and type the following command to run the babel script and compile scripts.js:
+
+ ```
+  npm run babel
+ ```
+
+2. Open index.html in your code editor, and modify the <script> tag as follows to load build/main.bundle.js, the compiled version of js/scripts.js:
+
+ ```
+  <script src="build/scripts.bundle.js"></script>
+ ```
+
+3. Open a new command prompt. Navigate (cd) to the es6-tutorial directory, and type the following command to start http-server:
+
+
+ ```
+  npm start
+ ```
+ 
+If port 8080 is already in use on your computer, modify the start script in package.json and specify a port that is available on your computer. For example:
+
+ ```
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server -p 9000"
+  },
+ ```
+ 
+4. Open a browser and access http://localhost:8080
+
+Open build/scripts.bundle.js in your code editor and notice that the generated code is virtually identical to the source code (js/scripts.js). This is because the current code in main.js doesn’t include any ECMAScript 6 feature. With this setup in place, we are now ready to start using ECMAScript 6 features in the next unit.
 
