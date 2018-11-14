@@ -18,7 +18,7 @@ npm init
 ```
 Press the Return key in response to all the questions to accept the default values.
 
-3. Type the following command to install the babel-cli and babel-core modules:
+3. Type the following command to install the **babel-cli** and **babel-core** modules:
 
 ```
 npm install babel-cli babel-core --save-dev
@@ -72,7 +72,7 @@ In the **es6-babel** directory, create a build directory to host the compiled ve
   npm start
  ```
  
-If port 8080 is already in use on your computer, modify the start script in package.json and specify a port that is available on your computer. For example:
+If **port 8080** is already in use on your computer, modify the start script in package.json and specify a port that is available on your computer. For example:
 
 ```
   "scripts": {
