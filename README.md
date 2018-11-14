@@ -23,7 +23,7 @@ Press the Return key in response to all the questions to accept the default valu
 ```
 npm install babel-cli babel-core --save-dev
 ```
-⋅⋅⋅There are different ways to install and run Babel. For example, you could also install Babel globally and run it from the command line. Refer to the Babel documentation for more information.
+There are different ways to install and run Babel. For example, you could also install Babel globally and run it from the command line. Refer to the Babel documentation for more information.
 
 4. Type the following command to install the ECMAScript 2015 preset:
 
@@ -31,7 +31,7 @@ npm install babel-cli babel-core --save-dev
 npm install babel-preset-es2015 --save-dev
 ```
 
-⋅⋅⋅In Babel 6, every transformer is a plugin that can be installed separately. A preset is a group of related plugins. Using a preset, you don’t have to install and update dozens of plugins individually.
+In Babel 6, every transformer is a plugin that can be installed separately. A preset is a group of related plugins. Using a preset, you don’t have to install and update dozens of plugins individually.
 
 5. Install http-server in your project. http-server is a lightweight web server we use to run the application locally during development. 
 
