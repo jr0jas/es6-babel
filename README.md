@@ -13,7 +13,7 @@ git clone https://github.com/jr0jas/es6-babel.git
 
 1. Open a command prompt, and navigate (cd) to the es6-babel directory.
 
-...Type the following command to create a package.json file:
+... Type the following command to create a package.json file:
 
 ```
 npm init
