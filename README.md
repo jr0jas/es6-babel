@@ -1,4 +1,4 @@
-# es6-babel
+# ES6 with Babel
 This an example about how works with ES6 and Babel.
 
 ## Step 1: Install the Sample Application
