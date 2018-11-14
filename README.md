@@ -77,7 +77,7 @@ If port 8080 is already in use on your computer, modify the start script in pack
 
  ```
   "scripts": {
-    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "babel": "babel --presets es2015 js/scripts.js -o build/scripts.bundle.js",
     "start": "http-server -p 9000"
   },
  ```
